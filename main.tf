@@ -1,8 +1,3 @@
-variable "prefix" {
-  # Change this to your student-id
-  default = "exu"
-}
-
 data "azurerm_resource_group" "main" {
     name = "${var.prefix}-resources"
 }
