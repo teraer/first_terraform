@@ -47,7 +47,7 @@ resource "azurerm_linux_virtual_machine" "default" {
   location              = data.azurerm_resource_group.main.location
   resource_group_name   = data.azurerm_resource_group.main.name
   network_interface_ids = [azurerm_network_interface.main.id]
-  size                  = "Standard_D2_v2"
+  size                  = "Standard_B1s"
   os_disk {
     caching              = "None"
     storage_account_type = "Standard_LRS"
